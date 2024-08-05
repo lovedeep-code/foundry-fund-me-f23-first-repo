@@ -1,14 +1,18 @@
-# Compiler files
+# Compiler and cache files
 cache/
 out/
 
-# Ignores development broadcast logs
-!/broadcast
+# Broadcast logs
 /broadcast/*/31337/
-/broadcast/**/dry-run/
 
 # Docs
 docs/
 
-# Dotenv file
+# Environment variables
 .env
+
+# Ignore all libraries except specific ones
+lib/
+!lib/chainlink-brownie-contracts
+!lib/forge-std
+!lib/foundry-devops
